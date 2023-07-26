@@ -5,7 +5,7 @@ services:
    context: ./Docker-files/db
   ports: 
    - "3306:3306"
-  volumees: 
+  volumes: 
    - vprodbdata:/var/lib/mysql
   environment:
    - MYSQL_ROOT_PASSWORD=vprodbpass
